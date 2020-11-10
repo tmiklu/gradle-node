@@ -7,7 +7,7 @@ node {
 }
 
 
-task helloWorld( type: NodeTask `) {
+task helloWorld( type: NodeTask ) {
     script = file( 'src/node' )
 }
 
