@@ -6,9 +6,8 @@ node {
     download = true
 }
 
-gradle npm_install
 
-task helloWorld( type: NodeTask, dependsOn: 'npmInstall' ) {
+task helloWorld( type: NodeTask `) {
     script = file( 'src/node' )
 }
 
