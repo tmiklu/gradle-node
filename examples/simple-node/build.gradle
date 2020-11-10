@@ -1,0 +1,11 @@
+apply plugin: 'com.moowork.node'
+
+node {
+    download = true
+}
+
+task helloWorld( type: NodeTask, dependsOn: 'npmInstall' ) {
+    script = file( 'src/node' )
+}
+
+task build( dependsOn: 'helloWorld' ) {}
