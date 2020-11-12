@@ -2,5 +2,7 @@ plugins {
   id "com.moowork.node" version "1.3.1"
 }
 
-gradle npm_install
-
+task installExpress(type: NpmTask) {
+  // install the express package only
+  args = ['install', 'express', '--save-dev']
+}
